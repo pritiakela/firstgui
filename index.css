@@ -1,0 +1,237 @@
+*{
+    font-family: "Audiowide", sans-serif;
+}
+
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url("./PICS/eduford_img/banner.png");
+    background-position: center;
+    box-sizing:content-box;
+    position: relative;
+
+
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:red;
+    font-size: 15px;
+    text-decoration: none;
+}
+.text-box{
+    width: 90%;
+    color:red;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+    text-align: center;
+}
+.text-box h1{
+    font-size: 49px;
+}
+.text-box p{
+    /*margin:10px 0 40px;*/
+    font-size: 25px;
+    color:brown;
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:greenyellow;
+    border: 1px solid blue;
+    padding: 12px 13px;
+    font-size:13px;
+    position:relative;
+    background: blue;
+}
+.hero-btn:hover{
+    border: 1px solid red;
+    background:black;
+    transition:1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 13px;
+    }
+    .text-box p{
+        /*margin:10px 0 40px;*/
+        font-size: 10px;
+        color:brown;
+    }
+    .hero-btn{
+        display:inline-block;
+        text-decoration:none;
+        color:greenyellow;
+        border: 1px solid blue;
+        padding: 8px 9px;
+        font-size:9px;
+        position:relative;
+        background: blue;
+    }
+    .nav-links ul li a{
+        color:red;
+        font-size: 9px;
+        text-decoration: none;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display:block;
+        padding: 5px 5px;
+        position: relative;
+    }
+    nav img{
+        width: 100px;
+        padding: 15px;
+    }
+    .nav-links{
+        position: absolute;
+        background:darkgoldenrod;
+        height:100vh;
+        width:150px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav .fa{
+        display:block;
+        color:black;
+        margin:10px;
+        font-size:22px;
+        cursor:pointer;
+    }
+    .navbar
+    {
+        margin-left: -32px;
+    }
+}
+
+/*------------COURSE----------*/
+ .course{
+     width: 80%;
+     margin:auto;
+     text-align: center;
+     padding-top:100px;
+ }
+ h1{
+     font-size: 16px;
+     font-weight: 600;
+     color:red;
+     box-sizing:content-box;
+     background: cyan;
+     text-align: center;
+    }
+ 
+ p{
+     color:#b63849;
+     font-size:14px;
+     font-weight:300;
+     line-height: 22px;
+     padding:10px;
+ }
+ .row{
+     margin-top: 5%;
+     display: flex;
+     justify-content:space-between;
+ }
+ .course-col{
+     flex-basis: 31%;
+     background:rgb(114, 189, 199);
+     border-radius:10px;
+     margin-bottom: 5%;
+     margin-inline-end: 7%;
+     padding: 20px 12px;
+     box-sizing:border-box;
+     transition:0.5s;
+ }
+ h3{
+     text-align: center;
+     font-weight: 600;
+     margin: 10px 0;
+ }
+ .course-col:hover{
+     box-shadow: 0 0 20px 0px red;
+
+ }
+ /*-------media query for course----*/
+ @media(max-width: 700px){
+     .row{
+         flex-direction: column;
+         display: inline-block;
+        }
+         
+     
+     .course-col{
+        flex-basis: 31%;
+        background:#b39a10;
+        border-radius:10px;
+        margin-bottom: 5%;
+        margin-inline-end: 7%;
+        padding: 20px 12px;
+        box-sizing:border-box;
+        transition:0.5s;
+    }
+    .course-col p{
+        text-decoration-color: red;
+    }
+ }
+
+ /*------------campus-------*/
+  .campus{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 50px;
+  }
+  .campus-col{
+      flex-basis: 32%;
+      border-radius:10px;
+      margin-bottom:30px;
+      position:relative;
+      overflow: hidden;
+  }
+  .campus-col img{
+      width:100%;
+  }
+  .abcd{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-between;
+}
+.layer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}

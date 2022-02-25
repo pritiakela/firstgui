@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design-easy tutorials</title>
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <link rel="stylesheet" href="./index.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="./PICS/eduford_img/logo.png" alt="home"></a>
+       <div class="nav-links" id="navlinks">
+        <i class="fa fa-window-close" id="hidebtn"></i>
+        <ul class="navbar">
+                <li><a href="">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            </div>
+           <i class="fa fa-bars" id="btnsave" ></i>
+    </nav>
+     <div class="text-box">
+         <h1>World's biggest university</h1>
+         <p>making website is now one of the easiest thing in the world <br>
+            you just need to learn HTML,CSS,JAVASCRIPT and you are good to go.</p>
+         <a href="" class="hero-btn">Visit us to know more</a>
+     </div>
+
+    </section>
+
+
+    <!------------COURSE------------------->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum dolor sit amet,consecuter adept cvvvvvvvvvvvvv dddddddddd <br>
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>we offer b.tech,mca,bca,mba.For all information related to 
+                    available courses please contact us or email us on given 
+                    emailid below.</p>
+        </div>
+          <div  class="course-col">
+            <h3>Degree</h3>
+            <p>we offer b.tech,mca,bca,mba.For all information related to 
+                available courses please contact us or email us on given 
+                emailid below.</p>
+       </div>
+       <div  class="course-col">
+        <h3>Postgraduation</h3>
+        <p>we offer b.tech,mca,bca,mba.For all information related to 
+            available courses please contact us or email us on given 
+            emailid below.</p>
+        </div>
+        </div>
+
+    </section>
+
+        <!-------- --CAMPUS------------->
+        <section class="campus">
+            <h1>Global campus</h1>
+            <p>we offer b.tech,mca,bca,mba.For all information related to 
+                available courses please contact us or email us on given 
+                emailid below.</p>
+                <div class="abcd">
+                <div class="campus-col">
+                    <img src="./PICS/eduford_img/london.png">
+                    <div class="layer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+    <!------- javascript for toggle menu-->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        // navlinks.style.right ="-200px";
+
+        document.getElementById ("btnsave").addEventListener ("click",()=> navlinks.style.right ="0px");
+
+        
+        
+        document.getElementById ("hidebtn").addEventListener ("click",()=> navlinks.style.right ="-200px");
+
+
+    </script>
+</body>
+</html>
